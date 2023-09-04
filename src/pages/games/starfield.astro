@@ -1,0 +1,79 @@
+---
+import Layout from "@layouts/Layout.astro";
+import HeroImage from "@components/HeroImage.astro";
+import Description from "@components/Description.astro";
+import Table from "@components/Table.astro";
+import TableRow from "@components/TableRow.astro";
+import PlatformLink from "@components/PlatformLink.astro";
+
+import DescriptionPicture from "@components/DescriptionPicture.astro";
+
+import image1 from "@assets/games/fs22/picture1.png";
+import image2 from "@assets/games/fs22/picture2.png";
+---
+
+<style>
+  :root {
+    --header-position-hue: 30%;
+    --header-image-hue: -20deg;
+    --header-image-brightness: 0.6;
+    --header-image-saturation: 1.25;
+  }
+</style>
+
+<Layout
+  title="cloud361 - Starfield"
+  description="Embark on an epic journey through the cosmos in Starfield, the highly anticipated space exploration game where you'll pilot advanced starships, forge alliances, and conquer the galaxy."
+  heading="Starfield"
+  subheading="Dont shoot the NPCs"
+  minimal="true"
+>
+  <HeroImage svg="starfield" />
+  <Table title="My Stats">
+    <TableRow component="Playtime">5 hours (18.08.2023)</TableRow>
+    <TableRow component="Platform">Xbox - PC</TableRow>
+  </Table>
+  <Description>
+    <p>
+      <strong
+        > In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery.!</strong
+      >
+    </p>
+
+    <p>
+      Step into the captivating realm of Farming Simulator 22, where the world
+      of agriculture comes to life with a serious yet endearing charm. Developed
+      by GIANTS Software, this exceptional gaming series lets you trade your
+      keyboard for a tractor as you embark on a journey of growth, challenges,
+      and endless rewards.
+    </p>
+
+    <h3>Starfield</h3>
+    <p>
+      Explore the uncharted depths of space in Starfield, the ultimate interstellar adventure. 
+      This groundbreaking game takes you on a journey beyond the stars, where you'll pilot advanced starships, 
+      unravel the mysteries of ancient alien civilizations, and chart your own destiny in a vast, open universe
+    </p>
+
+  </Description>
+  <Table title="Information about the Game">
+    <TableRow component="Developer">Bethesda</TableRow>
+    <TableRow component="Publisher">Bethesda</TableRow>
+    <TableRow component="Release Date">06.09.2023</TableRow>
+    <TableRow component="Genre">Action Adventure</TableRow>
+    <TableRow component="Official Website">
+      <PlatformLink
+        linktext="bethesda.net"
+        linkhref="https://bethesda.net/de/game/starfield"
+        iconname=""
+      />
+    </TableRow>
+    <TableRow component="Steam Store Page">
+      <PlatformLink
+        linktext="Starfield"
+        linkhref="https://store.steampowered.com/app/1716740/Starfield/"
+        iconname="steam"
+      />
+    </TableRow>
+  </Table>
+</Layout>
