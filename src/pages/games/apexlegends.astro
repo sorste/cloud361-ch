@@ -1,0 +1,123 @@
+---
+import Layout from "@layouts/Layout.astro";
+import HeroImage from "@components/HeroImage.astro";
+import Description from "@components/Description.astro";
+import Table from "@components/Table.astro";
+import TableRow from "@components/TableRow.astro";
+import PlatformLink from "@components/PlatformLink.astro";
+
+import DescriptionPicture from "@components/DescriptionPicture.astro";
+
+import image1 from "@assets/games/apexlegends/picture1.png";
+import image2 from "@assets/games/apexlegends/picture2.png";
+---
+
+<style>
+  :root {
+    --header-position-hue: 90%;
+  }
+</style>
+
+<Layout
+  title="cloud361 - Apex Legends"
+  description="Join cloud on a gaming odyssey like no other. From dominating battlefields to unraveling epic quests, Gummientchen explores pixel realms, leaving no virtual stone unturned."
+  heading="Apex Legends"
+  subheading="Jump and run so fast you reach lightspeed"
+  minimal="true"
+>
+  <HeroImage svg="apexlegends" fill="true" />
+  <Table title="My Stats">
+    <TableRow component="Playtime">10 hours (18.08.2023)</TableRow>
+    <TableRow component="Platform">Steam</TableRow>
+    <TableRow component="Playing with">
+      <PlatformLink
+        linktext="Mokko"
+        linkhref=""
+        iconname="steam"
+      />
+    </TableRow>
+  </Table>
+  <Description>
+    <p>
+      Apex Legends is a battle royale game that redefines the genre with its unique character-driven gameplay, 
+      vibrant world, and commitment to player engagement. Whether you're a seasoned gamer looking for a 
+      new challenge or a newcomer to the battle royale genre, Apex Legends offers an exciting and 
+      ever-evolving experience that's sure to keep you coming back for more. Join the Apex Games, 
+      assemble your squad, and prove you have what it takes to become a legend!
+    </p>
+
+    <p>
+      Welcome to the adrenaline-fueled world of Apex Legends, a game that has taken the battle royale genre to new heights.
+      Developed by Respawn Entertainment and published by Electronic Arts, Apex Legends offers a dynamic and immersive gaming 
+      experience that has captured the hearts of millions worldwide. Set in the Titanfall universe, this free-to-play title 
+      delivers fast-paced action, strategic gameplay, and a unique cast of characters, 
+      making it a standout in the crowded battle royale landscape.
+    </p>
+
+    <DescriptionPicture
+      src={image1}
+      alt="Picture of Apex"
+    />
+
+    <p>
+      At the core of Apex Legends is its diverse roster of "Legends," each with their own distinctive abilities and personalities. 
+      These Legends range from fierce soldiers and master snipers to cunning hackers and mystical healers, 
+      allowing players to choose a character that suits their playstyle. The tactical element of team composition 
+      is essential, as squads of three players must work together to survive and conquer the competition.
+    </p>
+
+    <p>
+      The game's map, known as Kings Canyon or World's Edge, provides a stunning backdrop for intense battles. 
+      With a mix of urban environments, open landscapes, and hidden secrets, each match feels unique. 
+      The thrill of the hunt is amplified by Apex Legends' fluid movement system, which includes sprinting, 
+      sliding, and zip lines, allowing players to traverse the terrain with finesse and creativity.
+    </p>
+
+    <p>
+      But the excitement doesn't stop there! Enter a world where cosmetics are
+      king and skins are the crown jewels. Customize your arsenal and express
+      your unique style with a collection of weapon skins that add a splash of
+      personality to your firearms. Unleash your creativity in the Steam
+      Workshop, uploading your own content to share with the community.
+    </p>
+
+    <DescriptionPicture
+      src={image2}
+      alt="Picture of Apex"
+    />
+
+    <p>
+      Apex Legends introduces innovative mechanics like the Jumpmaster system, which designates one player as the leader 
+      responsible for choosing the squad's landing location. This encourages teamwork and ensures a varied start to each match. 
+      Furthermore, the game's ping system facilitates communication without the need for voice chat, making it accessible to a global player base..
+    </p>
+
+    <p>
+      Apex Legends stands out for its commitment to evolving the gameplay experience. 
+      Regular updates, seasonal events, and the introduction of new Legends and weapons 
+      keep the community engaged. Additionally, the Apex Legends Global Series (ALGS) offers 
+      a competitive esports platform for players to showcase their skills and compete for substantial 
+      prizes, cementing its status as a major player in the esports scene.
+    </p>
+  </Description>
+  <Table title="Information about the Game">
+    <TableRow component="Developer">Respawn Entertainment</TableRow>
+    <TableRow component="Publisher">Respawn Entertainment</TableRow>
+    <TableRow component="Release Date">04.03.2019</TableRow>
+    <TableRow component="Genre">Battle Royale</TableRow>
+    <TableRow component="Official Website">
+      <PlatformLink
+        linktext="ea.com"
+        linkhref="https://www.ea.com/de-de/games/apex-legends"
+        iconname=""
+      />
+    </TableRow>
+    <TableRow component="Steam Store Page">
+      <PlatformLink
+        linktext="Apex Legends"
+        linkhref="https://store.steampowered.com/app/1172470/Apex_Legends/"
+        iconname="steam"
+      />
+    </TableRow>
+  </Table>
+</Layout>

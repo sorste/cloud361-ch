@@ -1,0 +1,120 @@
+---
+import Layout from "@layouts/Layout.astro";
+import HeroImage from "@components/HeroImage.astro";
+import Description from "@components/Description.astro";
+import Table from "@components/Table.astro";
+import TableRow from "@components/TableRow.astro";
+import PlatformLink from "@components/PlatformLink.astro";
+
+import DescriptionPicture from "@components/DescriptionPicture.astro";
+
+import image1 from "@assets/games/fortnite/picture1.jpg";
+import image2 from "@assets/games/fortnite/picture2.jpg";
+---
+
+<style>
+  :root {
+    --header-position-hue: 90%;
+  }
+</style>
+
+<Layout
+  title="cloud361 - Fortnite"
+  description="Join cloud on a gaming odyssey like no other. From dominating battlefields to unraveling epic quests, Gummientchen explores pixel realms, leaving no virtual stone unturned."
+  heading="Fortnite"
+  subheading="Für Fortnite"
+  minimal="true"
+>
+  <HeroImage svg="fortnite" fill="true" />
+  <Table title="My Stats">
+    <TableRow component="Playtime">50 hours (18.08.2023)</TableRow>
+    <TableRow component="Platform">Epic Games</TableRow>
+    <TableRow component="Playing with">
+      <PlatformLink
+        linktext="Friends"
+        linkhref=""
+        iconname="steam"
+      />
+    </TableRow>
+  </Table>
+  <Description>
+    <p>
+      Fortnite, developed by Epic Games, is a groundbreaking free-to-play battle royale game that has taken the gaming world by storm. 
+      With its unique building mechanics, vibrant and ever-changing world, and a multitude of cosmetic items to unlock, Fortnite offers 
+      an engaging and dynamic gaming experience. Beyond its casual appeal, Fortnite has established 
+      itself in the competitive esports scene, hosting major tournaments with substantial prizes. 
+      This cultural phenomenon has redefined the battle royale genre, providing players of all levels an 
+      exciting and continually evolving adventure on the battlefield.
+    </p>
+
+    <p>
+      Step into the colorful and dynamic world of Fortnite, a game that has revolutionized the battle royale genre. Developed by Epic Games, 
+      Fortnite has become a cultural phenomenon, offering players an exciting and ever-evolving gaming experience. 
+      With its free-to-play model, Fortnite has attracted a massive player base of all ages, creating a global gaming community like no other.
+    </p>
+
+    <DescriptionPicture
+      src={image1}
+      alt="Picture of Fortnite"
+    />
+
+    <p>
+      In Fortnite, you're not just a player; you're a builder, explorer, and warrior all in one. 
+      The game's unique building mechanic allows you to construct structures on-the-fly, adding a layer of strategy and creativity to every match. 
+      Alongside the standard battle royale mode, Fortnite offers various limited-time events and creative modes, keeping the gameplay fresh and exciting.
+    </p>
+
+    <p>
+      What sets Fortnite apart is its vibrant and constantly changing world. 
+      The island of Fortnite features a mix of natural landscapes, urban environments, 
+      and fantastical elements, ensuring each match feels distinct. Players can expect surprises like map changes, 
+      new points of interest, and in-game events that shape the narrative of the Fortnite universe.
+    </p>
+
+    <p>
+      Fortnite's Battle Pass system offers a unique progression experience. 
+      By completing challenges and playing matches, you can unlock a 
+      plethora of cosmetic items, including skins, emotes, and back bling. 
+      This system provides a sense of accomplishment and allows players to showcase their individuality on the battlefield.
+    </p>
+
+    <DescriptionPicture
+      src={image2}
+      alt="Picture of Fortnite"
+    />
+
+    <p>
+      Fortnite has also made its mark in the competitive gaming scene with the Fortnite World Cup and numerous esports tournaments. 
+      These events offer substantial cash prizes and attract the world's best players, solidifying Fortnite's status as a powerhouse in the esports arena.
+    </p>
+
+    <p>
+      Fortnite is a game that has not only redefined the battle royale genre but has also become a 
+      cultural phenomenon in its own right. With its building mechanics, evolving world, and dedication 
+      to keeping gameplay fresh, Fortnite continues to captivate players of all skill levels. 
+      Whether you're a casual gamer or an aspiring esports pro, Fortnite offers an exhilarating 
+      and social gaming experience that transcends traditional boundaries. Join the battle, build 
+      your way to victory, and become a part of the Fortnite legacy today!
+    </p>
+  </Description>
+  <Table title="Information about the Game">
+    <TableRow component="Developer">Epic Games</TableRow>
+    <TableRow component="Publisher">Epic Games</TableRow>
+    <TableRow component="Release Date">21.07.2017</TableRow>
+    <TableRow component="Genre">Battle Royale</TableRow>
+    <TableRow component="Official Website">
+      <PlatformLink
+        linktext="fortnite.com"
+        linkhref="https://www.fortnite.com/"
+        iconname=""
+      />
+    </TableRow>
+    <TableRow component="Epic Games store page">
+      <PlatformLink
+        linktext="Fortnite"
+        linkhref="https://store.epicgames.com/en-US/p/fortnite"
+        iconname="epicgames"
+      />
+    </TableRow>
+  </Table>
+</Layout>
